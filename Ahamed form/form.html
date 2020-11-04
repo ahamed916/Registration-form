@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="form.css">
+    <script src="form.js"></script>
+</head>
+<body style="background : linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%); height: 95.7vh;">
+    <div id="form">
+        <form  onsubmit="return validation();">
+            <div id="top">
+                <h3>Sign Up</h3>
+            </div>
+            <table >
+                <tr>
+                    <td>
+                        <input type="text" name="name" id="user" placeholder="First Name" required>
+                    </td>
+                    <td>
+                        <span id="name-error" class="error"></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <input type="text" name="name" id="user" placeholder="Last Name" required>
+                    </td>
+                    <td>
+                        <span id="name-error" class="error"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div style="font-size: 20px;" required>
+                            <form id="gender">
+                                Gender :
+                                <input type="radio" id="male" name="gender" value="male">
+                                <label for="male">Male</label>
+                                <input type="radio" id="female" name="gender" value="female">
+                                <label for="female">Female</label>
+                                <input type="radio" id="other" name="gender" value="other">
+                                <label for="other">Other</label>
+                            </form>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <div style="font-size: 20px;" required>
+                            <form>
+                              <label for="birthday">Birthday:</label>
+                              <input type="date" id="birthday" name="birthday">
+                            </form>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="text" name="mobileNo" id="mob" placeholder="Mobile number"required>
+                    </td>
+                    <td>
+                        <span id="mob-error" class="error"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="email" name="mail" id="mail" placeholder="E-mail" required>
+                    </td>
+                    <td>
+                        <span id="mail-error" class="error"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="password" name="pass" id="pass" placeholder="New password" required>
+                    </td>
+                    <td>
+                        <span id="pass-error" class="error"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="password" name="cnf-pass" id="cnf-pass" placeholder="Confirm password" required>
+                    </td>
+                    <td>
+                        <span id="cnfpass-error" class="error"></span>
+                    </td>
+                </tr>
+            </table>
+            <tr>
+                <td>
+                    <input type="submit" value="Sign Up" >
+                </td>
+            </tr>
+        </form>
+    </div>
+</body>
+</html>
