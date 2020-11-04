@@ -72,10 +72,10 @@ function validation(){
     let userCnfPass = document.getElementById("cnf-pass").value;
     
     if(userName  == "" || userMobile == "" || userEmail  == "" || userPass == "" || userCnfPass == "")
-        window.alert("Registration unsuccessful! The form must be filled out completely :) "); 
+        window.alert("Registration unsuccessful ! The form must be filled out completely :( "); 
     else {
         console.log("value");
-           window.alert("Registration successful! :("); 
+           window.alert("Registration successful! :)"); 
    }
         
 
